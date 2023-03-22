@@ -1,0 +1,248 @@
+:root {
+  --light-bar: #c4c4c4;
+  --dark-grey: #767676;
+}
+
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+span,
+strong,
+p,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SpoqaHanSansNeo-Regular";
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  outline: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+/* hide ========== */
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* layout & style ========= */
+
+.modal-wrap {
+  position: relative;
+  max-width: 520px;
+  margin: 100px auto;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  text-align: center;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--light-bar);
+  font-weight: 500;
+}
+
+main {
+  padding: 25px 24px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.user-sign-in {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#user-id,
+#user-pwd {
+  padding: 15px;
+  border: 1px solid var(--light-bar);
+  border-radius: 5px;
+}
+
+#user-id::placeholder,
+#user-pwd::placeholder {
+  color: var(--dark-grey);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.user-sign-in strong {
+  font-size: 14px;
+  color: #f4492e;
+}
+
+.user-login-checkbox {
+  color: var(--dark-grey);
+  font-weight: 500;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.user-login-checkbox::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  padding-right: 8px;
+  display: inline-block;
+  background: url(img/check-box.svg) no-repeat 0 0/22px;
+  vertical-align: -5px;
+}
+
+.user-sign-in button {
+  padding: 14px 0;
+  background: #2f80ed;
+  color: #fff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.sign-wrap {
+  text-align: center;
+  color: var(--dark-grey);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sign-wrap a {
+  display: inline-block;
+}
+
+.sign-up:hover,
+.sign-forgot:hover {
+  color: #000;
+}
+
+.sign-forgot::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  display: inline-block;
+  background: var(--dark-grey);
+  vertical-align: 0px;
+  margin: 0 12px;
+}
+
+.or {
+  color: var(--dark-grey);
+  margin-bottom: 20px;
+}
+
+.or::before {
+  content: "";
+  display: inline-block;
+  width: 205px;
+  height: 1px;
+  vertical-align: middle;
+  background: var(--dark-grey);
+  margin-right: 13px;
+}
+
+.or::after {
+  content: "";
+  display: inline-block;
+  width: 205px;
+  height: 1px;
+  vertical-align: middle;
+  background: var(--dark-grey);
+  margin-left: 13px;
+}
+
+.sns-login-btns {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+.sns-login-btns li {
+  border-radius: 5px;
+  border: 1px solid var(dark-grey);
+}
+
+.sns-login-btns button {
+  padding: 15px 0;
+  width: 100%;
+  color: var(--dark-grey);
+}
+
+.sns-login-btns button:hover {
+  padding: 15px 0;
+  width: 100%;
+  color: #000;
+}
+
+.sns-login-btns li:nth-child(1) {
+  background: url(img/Google__G__Logo\ 1.svg) no-repeat 10px 8px / 2em;
+  border: 1px solid var(--dark-grey);
+}
+
+.sns-login-btns li:nth-child(2) {
+  background: url(img/facebook.svg) no-repeat 10px 8px / 2em;
+  border: 1px solid #2d9cdb;
+}
+
+.sns-login-btns li:nth-child(3) {
+  background: url(img/naver-logo.svg) no-repeat 10px 8px / 2em;
+  border: 1px solid #00bf18;
+}
+
+.sns-login-btns li:nth-child(4) {
+  background: url(img/message-circle.svg) no-repeat 10px 8px / 2em;
+  border: 1px solid #f2c94c;
+}
+
+.close-btn {
+  padding: 5px;
+  position: absolute;
+  top: 13px;
+  right: 24px;
+}
